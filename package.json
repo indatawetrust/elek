@@ -1,0 +1,30 @@
+{
+  "name": "elek",
+  "version": "0.0.1",
+  "description": "json key filter",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/indatawetrust/elek.git"
+  },
+  "keywords": [
+    "json",
+    "key",
+    "filter"
+  ],
+  "author": "indatawetrust",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indatawetrust/elek/issues"
+  },
+  "homepage": "https://github.com/indatawetrust/elek#readme",
+  "dependencies": {
+    "object.entries": "^1.0.4"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2"
+  }
+}
