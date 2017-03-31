@@ -1,5 +1,10 @@
-import test from 'ava';
-import elek from './index'
+[![Travis Build Status](https://img.shields.io/travis/indatawetrust/elek.svg)](https://travis-ci.org/indatawetrust/elek)
+
+#### elek
+json key filter
+
+````js
+import elek from 'elek'
 
 const object = {
   "test1": {
@@ -25,8 +30,5 @@ const object = {
   }
 }
 
-test('test', t => {
- 
-  t.deepEqual(["red", "blue", "green"], elek(object, "color").map(_ => _.color))
-
-})
+elek(object, "color").map(_ => _.color) // ['red', 'blue', 'green']
+```
