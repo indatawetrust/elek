@@ -31,4 +31,3 @@ const object = {
 }
 
 elek(object, "color").map(_ => _.color) // ['red', 'blue', 'green']
-```
