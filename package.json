@@ -1,6 +1,6 @@
 {
   "name": "elek",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "json key filter",
   "main": "index.js",
   "scripts": {

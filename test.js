@@ -3,21 +3,15 @@ import elek from './index'
 
 const object = {
   "test1": {
-    "test2": {
-      "test3": {
-        "color": "red"
-      }
-    }
+    "color": "red"
   },
   "test4": {
     "test5": {
-      "test6": {
-        "color": "blue"
-      }
+      "color": "blue"
     }
   },
   "test7": {
-    "test": {
+    "test8": {
       "test9": {
         "color": "green"
       }
@@ -25,8 +19,19 @@ const object = {
   }
 }
 
-test('test', t => {
+test('layer 0 test', t => {
  
-  t.deepEqual(["red", "blue", "green"], elek(object, "color").map(_ => _.color))
+  t.deepEqual(["red", "blue", "green"],
+      elek(object, "color").map(_ => _.color)
+    )
+
+})
+
+test('layer 1 test', t => {
+ 
+  t.deepEqual(["test1", "test5", "test9"],
+      elek(object, "color", 1)
+        .map(_ => Object.keys(_))
+        .reduce((a,b) => a.concat(b)))
 
 })
