@@ -1,6 +1,6 @@
 {
   "name": "elek",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "json key filter",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/indatawetrust/elek#readme",
   "dependencies": {
+    "deep-equal": "^1.0.1",
     "object.entries": "^1.0.4"
   },
   "devDependencies": {
